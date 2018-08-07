@@ -1,0 +1,29 @@
+<form #loginForm="ngForm">
+  <span>Login</span>
+  <div class="row">
+    <div class="col-md-5">
+      <span>Username : </span>
+    </div>
+    <div class="col-md-7">
+      <input name="uname" type="text" [(ngModel)]="username" #uname>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-5">
+      <span>Password : </span>
+    </div>
+    <div class="col-md-7">
+      <input name="pword" type="password" [(ngModel)]="password" #pword>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <input type="button" name="login" value="Login" (click)="login()">
+    </div>
+    <div class="col-md-6">
+      <a routerLink="/signup">
+      <input type="button" name="signup" value="SignUp">
+      </a>
+    </div>
+  </div>
+</form>
